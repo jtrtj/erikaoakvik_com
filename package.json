@@ -11,6 +11,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.2.5",
     "eslint": "^8.22.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "prettier": "2.7.1"
   }
 }

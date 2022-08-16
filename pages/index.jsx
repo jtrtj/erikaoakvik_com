@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
+import Head from "next/head";
+import Hero from "../components/Hero";
 
 function Header({ title }) {
   return <h1>{title || "Default title"}</h1>;
@@ -20,15 +22,14 @@ export default function HomePage() {
   }
 
   return (
-    <div>
-      <Header title="Erika Oakvik 🚀" />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
-
-      <button onClick={handleClick}>Like ({likes})</button>
-    </div>
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+      </Head>
+      <Hero />
+    </>
   );
 }
