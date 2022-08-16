@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
+import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 
 function Header({ title }) {
@@ -29,6 +30,7 @@ export default function HomePage() {
           content="width=device-width, initial-scale=1"
         ></meta>
       </Head>
+      <NavBar />
       <Hero />
     </>
   );
